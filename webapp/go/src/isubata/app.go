@@ -736,7 +736,7 @@ func main() {
 	e.Use(middleware.Static("../public"))
 
 	e.GET("/initialize", getInitialize)
-	e.GET("/", getIcon)
+	e.GET("/", getIndex)
 	e.GET("/register", getRegister)
 	e.POST("/register", postRegister)
 	e.GET("/login", getLogin)
